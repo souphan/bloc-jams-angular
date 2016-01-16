@@ -31,8 +31,15 @@
                  { name: 'Wrong phone number', length: '2:15' }
              ]
          };
-             return Fixtures;
-         }
+         
+        Fixtures.getAlbum = function() {
+            return albumPicasso;
+        };
+         
+        };
+         
+            return Fixtures;
+        }
  
      angular
          .module('blocJams')
