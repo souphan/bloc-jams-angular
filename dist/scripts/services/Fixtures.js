@@ -44,9 +44,13 @@
         };
          
             return Fixtures;
-        }
+        
  
-     angular
+     
+  angular
          .module('blocJams')
          .factory('Fixtures', Fixtures);
  })();
+
+
+
