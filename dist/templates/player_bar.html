@@ -23,20 +23,24 @@
              <h2 class="artist-song-mobile"></h2>
              <h3 class="artist-name"></h3>
              <div class="seek-control">
-                 <div class="seek-bar">
-                     <div class="fill"></div>
-                     <div class="thumb"></div>
-                 </div>
+                 <seek-bar></seek-bar>
                  <div class="current-time"></div>
                  <div class="total-time"></div>
              </div>
          </div>
          <div class="control-group volume">
              <span class="icon ion-volume-high"></span>
-             <div class="seek-bar">
-                 <div class="fill"></div>
-                 <div class="thumb"></div>
-             </div>
+             <seek-bar></seek-bar>
          </div>
      </div>
  </section>
+
+<!--
+ <td class="song-item-title" ui-sref="album">{{ `` }}</td>
+ 
+We can play, pause, and move between songs, but the player bar doesn't show us what is playing. Use `` markup to update the player bar template with dynamic album and current song information:
+
+song name
+artist name
+total song time
+*/-->
