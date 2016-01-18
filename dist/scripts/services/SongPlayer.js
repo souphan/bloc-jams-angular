@@ -68,6 +68,12 @@
          SongPlayer.currentTime = null;
          
          /**
+         * @desc set SongPlayer volume attribute to hold volume
+         * @type {Object}
+         */
+         SongPlayer.volume  = null;
+         
+         /**
          * @function SongPlayer
          * @desc Update the play method with a condition that checks if the currently playing song is not equal to the song the user clicks
          * @param {Object} song
@@ -126,6 +132,18 @@
                 playSong(song);
              }
         };
+         
+         SongPlayer.setVolume = function(volume) {
+             if (SongPlayer.volume) {
+                 SongPlayer.setVolume(volume);
+             }
+         };
+
+         var playerBar = $(element);
+
+         attributes.$observe('max', function(newValue) {
+             scope.max = newValue;
+         });
          
          /**
          * @function setCurrentTime
