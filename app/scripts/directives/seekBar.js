@@ -69,12 +69,7 @@
                  scope.value = percent * scope.max;
                  notifyOnChange(scope.value);
             };
-         /**
-         * @function trackThumb
-         * @desc user drags the seek bar and track thumb
-         * @param
-         * @type
-         */
+         /** @desc user drags the seek bar and track thumb*/
              scope.trackThumb = function() {
                  $document.bind('mousemove.thumb', function(event) {
                      var percent = calculatePercent(seekBar, event);
